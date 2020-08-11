@@ -20,11 +20,13 @@ public class UHCMenuManager implements Listener {
     private void registerPowerups() {
         powerups.add(new SpeedyPickPowerup(plugin));
         powerups.add(new BuffsPowerup(plugin));
+        powerups.add(new BetterBuffsPowerup(plugin));
         powerups.add(new LifestealPowerup(plugin));
         powerups.add(new MaxHealthPowerup(plugin));
         powerups.add(new HastePowerup(plugin));
         powerups.add(new InvisPowerup(plugin));
         powerups.add(new BowPowerup(plugin));
+        powerups.add(new GlowingPowerup(plugin));
     }
 
     public UHCMenuManager(UHCPowerupMenu plugin) {

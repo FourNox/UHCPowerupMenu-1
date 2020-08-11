@@ -6,7 +6,7 @@ import org.bukkit.entity.Player;
 
 public class LifestealPowerup extends AbstractPowerup {
     public LifestealPowerup(UHCPowerupMenu plugin) {
-        super(plugin, Material.GOLDEN_SWORD, true, 10,
+        super(plugin, Material.GOLDEN_SWORD, true, 15,
                 "Lifesteal", "A sword that heals part the damage given");
     }
 

@@ -1,7 +1,7 @@
 name: UHCPowerupMenu
 version: 1.0-SNAPSHOT
 api-version: 1.16
-author: konsolas
+authors: [konsolas, FourNox]
 main: me.konsolas.uhcpowerupmenu.UHCPowerupMenu
 commands:
   openmenu:

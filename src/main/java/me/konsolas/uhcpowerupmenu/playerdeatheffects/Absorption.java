@@ -11,18 +11,14 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 
 import java.util.Objects;
 
-public class ReduceRedHearts implements Listener {
+public class Absorption implements Listener {
 
     @EventHandler
     public void onPlayerDeath(final PlayerDeathEvent playerDeathEvent) {
 
         if (playerDeathEvent.getEntity() instanceof Player) {
             Player target = playerDeathEvent.getEntity();
-            AttributeInstance maxHealthAttr = Objects.requireNonNull(target.getAttribute(Attribute.GENERIC_MAX_HEALTH));
-            if (maxHealthAttr.getValue() > 2) {
-                maxHealthAttr.setBaseValue(maxHealthAttr.getBaseValue() - 2);
                 target.setAbsorptionAmount(target.getAbsorptionAmount() + 2);
-            }
         }
     }
 }
