@@ -1,6 +1,7 @@
 package me.konsolas.uhcpowerupmenu;
 
 import me.konsolas.uhcpowerupmenu.playerdeatheffects.Absorption;
+import me.konsolas.uhcpowerupmenu.playerdeatheffects.ReduceRedHearts;
 import me.konsolas.uhcpowerupmenu.special.HealthBow;
 import me.konsolas.uhcpowerupmenu.special.HealthUpgrades;
 import me.konsolas.uhcpowerupmenu.special.LifestealSword;
@@ -26,7 +27,7 @@ public class UHCPowerupMenu extends JavaPlugin {
         getServer().getPluginManager().registerEvents(lifestealSword, this);
         getServer().getPluginManager().registerEvents(healthBow, this);
         getServer().getPluginManager().registerEvents(healthUpgrades, this);
-
+        getServer().getPluginManager().registerEvents(new ReduceRedHearts(), this);
         getServer().getPluginManager().registerEvents(new Absorption(), this);
     }
 

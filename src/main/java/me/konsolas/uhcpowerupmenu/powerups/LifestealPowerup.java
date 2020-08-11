@@ -12,7 +12,9 @@ public class LifestealPowerup extends AbstractPowerup {
 
     @Override
     public void apply(Player target) {
-        super.apply(target);
-        giveItems(target, plugin.getLifestealSword().getItemStack());
+        if(!target.getInventory().contains(plugin.getLifestealSword().getItemStack())) {
+            super.apply(target);
+            giveItems(target, plugin.getLifestealSword().getItemStack());
+        }
     }
 }
