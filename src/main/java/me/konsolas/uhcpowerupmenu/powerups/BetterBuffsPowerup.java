@@ -1,5 +1,4 @@
 package me.konsolas.uhcpowerupmenu.powerups;
-
 import me.konsolas.uhcpowerupmenu.UHCPowerupMenu;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
