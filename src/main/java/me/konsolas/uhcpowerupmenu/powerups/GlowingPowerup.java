@@ -8,7 +8,7 @@ import org.bukkit.potion.PotionEffectType;
 
 public class GlowingPowerup extends AbstractPowerup {
     public GlowingPowerup(UHCPowerupMenu plugin) {
-        super(plugin, Material.SPECTRAL_ARROW, false, 3, "Glowing",
+        super(plugin, Material.SPECTRAL_ARROW, false, 13, "Glowing",
                 "Applies the 'glowing' debuff for 10 seconds to all players near the user");
     }
     @Override
