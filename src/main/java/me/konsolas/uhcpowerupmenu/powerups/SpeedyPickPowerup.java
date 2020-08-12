@@ -11,16 +11,16 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.Objects;
 
 public class SpeedyPickPowerup extends AbstractPowerup {
-    private static final ItemStack SPEEDY_PICK = new ItemStack(Material.IRON_PICKAXE);
+    private static final ItemStack SPEEDY_PICK = new ItemStack(Material.STONE_PICKAXE);
     static {
         ItemMeta pickMeta = Objects.requireNonNull(SPEEDY_PICK.getItemMeta());
         pickMeta.setDisplayName(ChatColor.GOLD + "Speedy pick");
-        pickMeta.addEnchant(Enchantment.DIG_SPEED, 10, true);
+        pickMeta.addEnchant(Enchantment.DIG_SPEED, 7, true);
         SPEEDY_PICK.setItemMeta(pickMeta);
     }
 
     public SpeedyPickPowerup(UHCPowerupMenu plugin) {
-        super(plugin, Material.IRON_PICKAXE, true, 8, "Speedy Pick", "Mine super fast!");
+        super(plugin, Material.STONE_PICKAXE, true, 5, "Speedy Pick", "Mine super fast!");
     }
 
     @Override

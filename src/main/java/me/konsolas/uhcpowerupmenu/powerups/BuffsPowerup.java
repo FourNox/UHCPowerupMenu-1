@@ -21,7 +21,7 @@ public class BuffsPowerup extends AbstractPowerup {
         target.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 600, 1));
         target.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 600, 1));
         target.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 600, 1));
-        target.setHealthScale(target.getHealth() / 2);
+        target.setHealth(target.getHealth() / 2);
         target.sendMessage(ChatColor.BOLD + "You feel like you can break the world in two...with your bare hands!");
     }
 }
