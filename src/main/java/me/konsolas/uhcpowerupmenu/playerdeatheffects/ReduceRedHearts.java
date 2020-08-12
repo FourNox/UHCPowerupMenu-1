@@ -17,7 +17,7 @@ public class ReduceRedHearts implements Listener {
         if (playerDeathEvent.getEntity() instanceof Player) {
             Player target = playerDeathEvent.getEntity();
             AttributeInstance maxHealthAttr = Objects.requireNonNull(target.getAttribute(Attribute.GENERIC_MAX_HEALTH));
-            if ((maxHealthAttr.getValue() <= 20) && (maxHealthAttr.getValue() > 2)) {
+            if ((maxHealthAttr.getValue() <= 20) && (maxHealthAttr.getValue() > 4)) {
                 maxHealthAttr.setBaseValue(maxHealthAttr.getBaseValue() - 2);
             } else if ((maxHealthAttr.getValue() <= 40) && (maxHealthAttr.getValue() > 20)){
                 maxHealthAttr.setBaseValue(maxHealthAttr.getBaseValue() - 4);
